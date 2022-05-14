@@ -46,6 +46,7 @@ class FilePickerWeb extends FilePicker {
     bool withData = true,
     bool withReadStream = false,
     bool lockParentWindow = false,
+    int? maxImages,
   }) async {
     if (type != FileType.custom && (allowedExtensions?.isNotEmpty ?? false)) {
       throw Exception(

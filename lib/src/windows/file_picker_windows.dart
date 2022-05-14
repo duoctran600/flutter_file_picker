@@ -25,6 +25,7 @@ class FilePickerWindows extends FilePicker {
     bool withData = false,
     bool withReadStream = false,
     bool lockParentWindow = false,
+    int? maxImages,
   }) async {
     final comdlg32 = DynamicLibrary.open('comdlg32.dll');
 
